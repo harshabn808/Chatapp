@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="KGk-i7-Jjw" customClass="TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oG-dH-AgD">
+                        <rect key="frame" x="20" y="13" width="354" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="bf4-AR-BRg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.081490886560000003" green="0.20594665209999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="354" translatesAutoresizingMaskIntoConstraints="NO" id="9j7-6f-PP8">
+                        <rect key="frame" x="20" y="46" width="354" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="354" id="Crv-Iq-237"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9j7-6f-PP8" firstAttribute="top" secondItem="5oG-dH-AgD" secondAttribute="bottom" constant="12" id="9QT-lN-DQU"/>
+                    <constraint firstAttribute="trailing" secondItem="9j7-6f-PP8" secondAttribute="trailing" constant="20" id="9fD-BZ-Mve"/>
+                    <constraint firstAttribute="trailing" secondItem="5oG-dH-AgD" secondAttribute="trailing" constant="20" id="JkV-wl-F7Z"/>
+                    <constraint firstItem="9j7-6f-PP8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="kvS-Tt-pE9"/>
+                    <constraint firstItem="5oG-dH-AgD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="m0a-bP-r41"/>
+                    <constraint firstItem="5oG-dH-AgD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="m1E-Xy-eYU"/>
+                    <constraint firstAttribute="bottom" secondItem="9j7-6f-PP8" secondAttribute="bottom" constant="15" id="nCY-gY-b7I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chatTextField" destination="9j7-6f-PP8" id="xHS-jE-aY3"/>
+                <outlet property="userNameField" destination="5oG-dH-AgD" id="cmh-AJ-eMF"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
